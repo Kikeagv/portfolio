@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
-import type { Project } from "../types";
+import type { Project } from "./types";
 
 const projects: Project[] = [
   {

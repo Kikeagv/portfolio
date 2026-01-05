@@ -113,7 +113,7 @@ export function AIVersion() {
                 AI-Optimized Portfolio
               </h2>
               <p className="mt-2 text-neutral-400">
-                Structured markdown for AI agents, recruiters' tools, and
+                Structured markdown for AI agents, recruiters&apos; tools, and
                 automated systems
               </p>
             </div>

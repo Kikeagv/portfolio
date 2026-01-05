@@ -71,7 +71,7 @@ export function Hero() {
 
               <p className="mt-8 max-w-lg text-xl text-neutral-500">
                 Specializing in complex systems—healthcare, transit,
-                finance—where good design isn't a luxury, it's a necessity.
+                finance—where good design isn&apos;t a luxury, it&apos;s a necessity.
               </p>
 
               <div className="mt-12 flex flex-wrap items-center gap-4">

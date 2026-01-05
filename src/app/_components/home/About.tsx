@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import type { Stat } from "../types";
+import type { Stat } from "./types";
 
 const skills = [
   "User Research",
@@ -66,7 +66,7 @@ export function About() {
 
             <div className="mt-8 space-y-6 text-lg text-neutral-600">
               <p>
-                Before opening Figma, I'm in the field. Riding buses with
+                Before opening Figma, I&apos;m in the field. Riding buses with
                 commuters. Sitting in living rooms with seniors trying health
                 apps. Understanding problems in context, not just in theory.
               </p>

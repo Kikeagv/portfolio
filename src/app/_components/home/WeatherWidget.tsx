@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Cloud, CloudRain, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
-import type { WeatherData } from "../types";
+import type { WeatherData } from "./types";
 
 export function WeatherWidget() {
   const [weather, setWeather] = useState<WeatherData>({

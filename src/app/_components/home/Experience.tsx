@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import type { Job } from "../types";
+import type { Job } from "./types";
 
 const jobs: Job[] = [
   {
@@ -42,7 +42,7 @@ export function Experience() {
             Experience
           </p>
           <h2 className="text-3xl font-light text-neutral-900">
-            Where I've worked
+            Where I&apos;ve worked
           </h2>
         </motion.div>
 

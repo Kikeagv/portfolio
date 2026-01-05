@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Bot, Download, User } from "lucide-react";
 import { useLayoutEffect, useRef, useState } from "react";
@@ -48,9 +49,9 @@ export function Navigation({ version, onVersionChange }: NavigationProps) {
   return (
     <nav className="fixed top-0 right-0 left-0 z-50 bg-[#fafafa]/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a href="/" className="text-sm font-medium text-neutral-900">
+        <Link href="/" className="text-sm font-medium text-neutral-900">
           Enrique García
-        </a>
+        </Link>
 
         <div className="flex items-center gap-6">
           <div className="relative flex items-center rounded-full border border-neutral-200 bg-white p-1">
