@@ -2,6 +2,24 @@ import type { Project } from "./types";
 
 export const projects: Project[] = [
   {
+    id: "one",
+    number: "05",
+    title: "Credit Card Onboarding",
+    subtitle: "Earning trust in under 5 minutes",
+    description: "Designing an onboarding that turns fear of credit into confident activation.",
+    category: "UX/UI Design • Product Design",
+    period: "2024",
+    color: "violet",
+    gradient: "from-violet-600 to-purple-500",
+    href: "/projects/one",
+    stats: [
+      { value: "5", label: "Core archetypes" },
+      { value: "6", label: "Key steps" },
+      { value: "Self-serve", label: "No &ldquo;executive&rdquo;" },
+    ],
+    featured: true,
+  },
+  {
     id: "ruta-sv",
     number: "01",
     title: "Ruta SV",

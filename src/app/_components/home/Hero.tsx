@@ -75,7 +75,7 @@ export function Hero() {
               </p>
 
               <div className="mt-12 flex flex-wrap items-center gap-4">
-                <Link href="#work">
+                <Link href="/projects/">
                   <motion.button
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}

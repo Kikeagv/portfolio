@@ -15,7 +15,6 @@ export default function ProjectsPage() {
       <Navigation />
       <Hero />
       <FeaturedProjects />
-      <OtherProjects />
       <CTASection />
       <Footer />
     </div>
