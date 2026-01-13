@@ -95,9 +95,9 @@ export const accessibilityMetrics: AccessibilityMetric[] = [
 
 export const screens: Screen[] = [
   { name: "home-screen.png", label: "Home" },
-  { name: "home-alert.png", label: "Alerts" },
-  { name: "route-results.png", label: "Routes" },
   { name: "route-detail.png", label: "Detail" },
+  { name: "route-results.png", label: "Routes" },
+  { name: "home-alert.png", label: "Alerts" },
   { name: "ticket-purchase.png", label: "Purchase" },
   { name: "my-tickets.png", label: "My Tickets" },
   { name: "ticket-qr.png", label: "QR Code" },

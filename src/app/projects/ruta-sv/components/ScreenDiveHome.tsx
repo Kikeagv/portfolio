@@ -1,5 +1,8 @@
 "use client";
 
+import Image from "next/image";
+
+
 export function ScreenDiveHome() {
   return (
     <section className="bg-white py-24 md:py-32">
@@ -40,10 +43,13 @@ export function ScreenDiveHome() {
           </div>
 
           <div className="flex justify-center">
-            <div className="aspect-390/844 w-full max-w-75 overflow-hidden rounded-[2.5rem] bg-neutral-100 shadow-xl">
-              <div className="flex h-full w-full items-center justify-center">
-                <p className="text-neutral-400">home-screen.png</p>
-              </div>
+            <div className="relative aspect-390/844 w-full max-w-75 overflow-hidden rounded-[2.5rem] bg-neutral-100 shadow-xl">
+              <Image
+                src="/projects/ruta-sv/home-screen.png"
+                alt="Home Screen"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>

@@ -4,7 +4,6 @@ import {
   Navigation,
   Hero,
   FeaturedProjects,
-  OtherProjects,
   CTASection,
   Footer,
 } from "./components";

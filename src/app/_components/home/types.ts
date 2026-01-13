@@ -11,7 +11,7 @@ export interface Project {
   subtitle: string;
   description: string;
   category: string;
-  color: "emerald" | "blue";
+  color: "emerald" | "blue" | "violet";
   href: string;
   stats: Record<string, string>;
 }

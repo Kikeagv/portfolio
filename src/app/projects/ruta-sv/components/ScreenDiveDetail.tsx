@@ -1,15 +1,21 @@
 "use client";
 
+import Image from "next/image";
+
+
 export function ScreenDiveDetail() {
   return (
     <section className="bg-neutral-950 py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid items-center gap-16 md:grid-cols-2">
           <div className="flex justify-center">
-            <div className="aspect-390/844 w-full max-w-75 overflow-hidden rounded-[2.5rem] bg-white shadow-xl">
-              <div className="flex h-full w-full items-center justify-center bg-neutral-100">
-                <p className="text-neutral-400">route-detail.png</p>
-              </div>
+            <div className="relative aspect-390/844 w-full max-w-75 overflow-hidden rounded-[2.5rem] bg-white shadow-xl">
+              <Image
+                src="/projects/ruta-sv/route-detail.png"
+                alt="Route Detail"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
 

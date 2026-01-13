@@ -8,15 +8,15 @@ import type { Project } from "./types";
 
 const projects: Project[] = [
   {
-    id: "healthcare",
+    id: "one",
     number: "01",
-    title: "Healthcare Consultation",
-    subtitle: "Telehealth for older adults",
-    description: "What happens when healthcare goes digital but patients don't?",
-    category: "UX Research • Accessibility",
-    color: "emerald",
-    href: "/projects/healthcare",
-    stats: { users: "65+", success: "95%", score: "86 SUS" },
+    title: "Credit Card Onboarding",
+    subtitle: "Earning trust in under 5 minutes",
+    description: "Designing an onboarding that turns fear of credit into confident activation.",
+    category: "UX/UI Design • Product Design",
+    color: "violet",
+    href: "/projects/one",
+    stats: { archetypes: "5", steps: "6", process: "Self-serve" },
   },
   {
     id: "ruta-sv",
@@ -33,6 +33,24 @@ const projects: Project[] = [
 
 export function Projects() {
   const [hoveredProject, setHoveredProject] = useState<string | null>(null);
+
+  const getColorClass = (color: string) => {
+    switch (color) {
+      case "emerald": return "bg-emerald-500";
+      case "blue": return "bg-blue-500";
+      case "violet": return "bg-violet-500";
+      default: return "bg-neutral-500";
+    }
+  };
+
+  const getGradientClass = (color: string) => {
+    switch (color) {
+      case "emerald": return "from-emerald-600 to-teal-600";
+      case "blue": return "from-blue-600 to-cyan-600";
+      case "violet": return "from-violet-600 to-purple-600";
+      default: return "from-neutral-600 to-neutral-700";
+    }
+  };
 
   return (
     <section id="work" className="bg-neutral-950 px-6 py-32">
@@ -63,11 +81,7 @@ export function Projects() {
               <Link href={project.href} className="group block">
                 <div className="relative overflow-hidden rounded-2xl bg-neutral-900 transition-colors hover:bg-neutral-800">
                   <div
-                    className={`absolute top-0 left-0 h-full w-1 ${
-                      project.color === "emerald"
-                        ? "bg-emerald-500"
-                        : "bg-blue-500"
-                    }`}
+                    className={`absolute top-0 left-0 h-full w-1 ${getColorClass(project.color)}`}
                   />
 
                   <div className="p-8 md:p-12">
@@ -123,11 +137,7 @@ export function Projects() {
                     className="overflow-hidden"
                   >
                     <div
-                      className={`h-62.5 bg-linear-to-br ${
-                        project.color === "emerald"
-                          ? "from-emerald-600 to-teal-600"
-                          : "from-blue-600 to-cyan-600"
-                      }`}
+                      className={`h-62.5 bg-linear-to-br ${getGradientClass(project.color)}`}
                     >
                       <div className="flex h-full w-full items-center justify-center">
                         <p className="text-white/40">Project preview</p>

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { screens } from "../data";
 
 export function ScreenGallery() {
@@ -26,10 +27,13 @@ export function ScreenGallery() {
               transition={{ delay: index * 0.05 }}
               className="group"
             >
-              <div className="aspect-9/16 overflow-hidden rounded-2xl bg-neutral-900 transition-transform group-hover:scale-[1.02]">
-                <div className="flex h-full w-full items-center justify-center bg-neutral-800">
-                  <p className="text-xs text-neutral-600">{screen.name}</p>
-                </div>
+              <div className="relative aspect-9/16 overflow-hidden rounded-2xl bg-neutral-900 transition-transform group-hover:scale-[1.02]">
+                <Image
+                  src={`/projects/ruta-sv/${screen.name}`}
+                  alt={screen.label}
+                  fill
+                  className="object-cover"
+                />
               </div>
               <p className="mt-3 text-center text-sm text-neutral-500">
                 {screen.label}

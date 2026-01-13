@@ -3,25 +3,13 @@
 import {
   Navigation,
   Hero,
-  TheHook,
+  ImpactStatement,
   ContextStats,
   MyRole,
-  Research,
-  CoreInsight,
-  Insights,
   Personas,
   DesignPrinciples,
-  Solution,
-  ScreenDiveHome,
-  ScreenDiveAlerts,
-  ScreenDiveResults,
-  ScreenDiveDetail,
-  ScreenDivePurchase,
-  ScreenDiveTickets,
-  ScreenGallery,
+  ScreenShowcase,
   DesignSystem,
-  AccessibilityChecklist,
-  Reflection,
   NextProject,
 } from "./components";
 
@@ -30,25 +18,13 @@ export default function RutaSVPage() {
     <div className="bg-[#0a0a0a]">
       <Navigation />
       <Hero />
-      <TheHook />
+      <ImpactStatement />
       <ContextStats />
       <MyRole />
-      <Research />
-      <CoreInsight />
-      <Insights />
       <Personas />
       <DesignPrinciples />
-      <Solution />
-      <ScreenDiveHome />
-      <ScreenDiveAlerts />
-      <ScreenDiveResults />
-      <ScreenDiveDetail />
-      <ScreenDivePurchase />
-      <ScreenDiveTickets />
-      <ScreenGallery />
+      <ScreenShowcase />
       <DesignSystem />
-      <AccessibilityChecklist />
-      <Reflection />
       <NextProject />
     </div>
   );

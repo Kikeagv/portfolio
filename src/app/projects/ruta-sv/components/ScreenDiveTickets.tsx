@@ -1,5 +1,8 @@
 "use client";
 
+import Image from "next/image";
+
+
 export function ScreenDiveTickets() {
   return (
     <section className="bg-neutral-100 py-24 md:py-32">
@@ -19,18 +22,24 @@ export function ScreenDiveTickets() {
 
         <div className="grid items-center gap-8 md:grid-cols-2">
           <div className="flex justify-center">
-            <div className="aspect-390/844 w-full max-w-70 overflow-hidden rounded-[2.5rem] bg-white shadow-xl">
-              <div className="flex h-full w-full items-center justify-center bg-neutral-50">
-                <p className="text-neutral-400">my-tickets.png</p>
-              </div>
+            <div className="relative aspect-390/844 w-full max-w-70 overflow-hidden rounded-[2.5rem] bg-white shadow-xl">
+              <Image
+                src="/projects/ruta-sv/my-tickets.png"
+                alt="My Tickets"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
 
           <div className="flex justify-center">
-            <div className="aspect-390/844 w-full max-w-70 overflow-hidden rounded-[2.5rem] bg-white shadow-xl">
-              <div className="flex h-full w-full items-center justify-center bg-neutral-50">
-                <p className="text-neutral-400">ticket-qr.png</p>
-              </div>
+            <div className="relative aspect-390/844 w-full max-w-70 overflow-hidden rounded-[2.5rem] bg-white shadow-xl">
+              <Image
+                src="/projects/ruta-sv/ticket-qr.png"
+                alt="Ticket QR"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>

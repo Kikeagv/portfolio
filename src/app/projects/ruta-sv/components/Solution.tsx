@@ -1,5 +1,8 @@
 "use client";
 
+import Image from "next/image";
+
+
 export function Solution() {
   return (
     <section className="bg-linear-to-b from-neutral-950 to-[#0047AB]/30 py-24 md:py-32">
@@ -20,10 +23,13 @@ export function Solution() {
 
         <div className="mb-24 overflow-hidden rounded-3xl bg-linear-to-br from-[#0047AB] to-[#00A86B] p-8 md:p-16">
           <div className="mx-auto max-w-sm">
-            <div className="aspect-390/844 overflow-hidden rounded-[2.5rem] bg-white shadow-2xl">
-              <div className="flex h-full w-full items-center justify-center bg-neutral-100">
-                <p className="text-neutral-400">home-screen.png</p>
-              </div>
+            <div className="relative aspect-390/844 overflow-hidden rounded-[2.5rem] bg-white shadow-2xl">
+              <Image
+                src="/projects/ruta-sv/home-screen.png"
+                alt="Ruta SV Home"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
