@@ -86,7 +86,7 @@ export function Hero() {
                   </motion.button>
                 </Link>
                 <Link
-                  href="mailto:enrique@example.com"
+                  href="mailto:contact@enriqueagv.com"
                   className="text-sm text-neutral-500 transition-colors hover:text-neutral-900"
                 >
                   Get in touch →

@@ -12,7 +12,7 @@ const screens = [
     { name: "ticket-purchase.png", label: "Purchase" },
     { name: "my-tickets.png", label: "My Tickets" },
     { name: "ticket-qr.png", label: "QR Ticket" },
-    { name: "route-map.png", label: "Live Map" },
+    { name: "route-map.png", label: "Live trip" },
 ];
 
 export function ScreenShowcase() {

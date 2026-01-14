@@ -15,9 +15,6 @@ export function TheHook() {
                 >
                     People don&apos;t struggle with skincare because they don&apos;t care.
                     <span className="text-neutral-400"> They struggle because they&apos;re overwhelmed.</span>
-                    <br />
-                    <br />
-                    This project reimagines the pharmacy as a guide—not just a shelf.
                 </motion.p>
             </div>
         </section>

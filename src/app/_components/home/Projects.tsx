@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import type { Project } from "./types";
 
 const projects: Project[] = [
@@ -16,7 +17,6 @@ const projects: Project[] = [
     category: "UX/UI Design • Product Design",
     color: "violet",
     href: "/projects/one",
-    stats: { archetypes: "5", steps: "6", process: "Self-serve" },
   },
   {
     id: "ruta-sv",
@@ -27,7 +27,7 @@ const projects: Project[] = [
     category: "Product Design • Mobile",
     color: "blue",
     href: "/projects/ruta-sv",
-    stats: { users: "45K+", interviews: "42", rating: "4.6★" },
+    image: "/home/RutaSV-cover.png",
   },
 ];
 
@@ -115,17 +115,6 @@ export function Projects() {
                         <ArrowRight className="h-5 w-5 text-white" />
                       </motion.div>
                     </div>
-
-                    <div className="mt-8 flex gap-8 border-t border-neutral-800 pt-6">
-                      {Object.entries(project.stats).map(([key, value]) => (
-                        <div key={key}>
-                          <p className="text-xl font-light text-white">{value}</p>
-                          <p className="text-xs tracking-wider text-neutral-600 uppercase">
-                            {key}
-                          </p>
-                        </div>
-                      ))}
-                    </div>
                   </div>
 
                   <motion.div
@@ -137,11 +126,20 @@ export function Projects() {
                     className="overflow-hidden"
                   >
                     <div
-                      className={`h-62.5 bg-linear-to-br ${getGradientClass(project.color)}`}
+                      className={`relative h-62.5 bg-linear-to-br ${getGradientClass(project.color)}`}
                     >
-                      <div className="flex h-full w-full items-center justify-center">
-                        <p className="text-white/40">Project preview</p>
-                      </div>
+                      {project.image ? (
+                        <Image
+                          src={project.image}
+                          alt={project.title}
+                          fill
+                          className="object-cover"
+                        />
+                      ) : (
+                        <div className="flex h-full w-full items-center justify-center">
+                          <p className="text-white/40">Project preview</p>
+                        </div>
+                      )}
                     </div>
                   </motion.div>
                 </div>

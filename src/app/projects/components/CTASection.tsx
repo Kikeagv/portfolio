@@ -22,7 +22,7 @@ export function CTASection() {
 
           <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
             <motion.a
-              href="mailto:enrique@example.com"
+              href="mailto:contact@enriqueagv.com"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="flex items-center gap-2 rounded-full bg-neutral-900 px-8 py-4 text-white"

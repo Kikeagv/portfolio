@@ -59,7 +59,7 @@ export function Hero() {
                     transition={{ delay: 0.6 }}
                     className="mx-auto max-w-3xl text-lg text-neutral-400"
                 >
-                    A skin-specialized pharmacy experience built around personalized assessment,
+                    A skin specialized pharmacy experience built around personalized assessment,
                     transparent recommendations, and dermatological expertise made accessible.
                 </motion.p>
             </div>

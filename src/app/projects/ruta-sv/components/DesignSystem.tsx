@@ -44,7 +44,7 @@ export function DesignSystem() {
           </div>
 
           <div>
-            <div className="mb-6 flex aspect-square flex-col justify-center overflow-hidden rounded-2xl bg-neutral-100 p-6">
+            <div className="font-albert-sans mb-6 flex aspect-square flex-col justify-center overflow-hidden rounded-2xl bg-neutral-100 p-6">
               <p className="text-4xl font-bold text-neutral-900">Aa</p>
               <p className="mt-2 text-2xl font-semibold text-neutral-700">
                 Headlines
@@ -55,11 +55,11 @@ export function DesignSystem() {
               </p>
             </div>
             <h3 className="text-lg font-medium text-neutral-900">
-              Dynamic type support
+              Universal scaling with Albert Sans
             </h3>
             <p className="mt-2 text-neutral-600">
-              All text scales from 85% to 200%. System fonts (SF Pro, Roboto)
-              for optimal rendering and accessibility.
+              Albert Sans ensures high legibility and consistent scaling across
+              all platforms, supporting dynamic type from 85% to 200%.
             </p>
           </div>
 

@@ -10,7 +10,7 @@ export function Insights() {
                 <div className="mb-14">
                     <p className="mb-4 text-sm tracking-wider text-neutral-500 uppercase">Key Insights</p>
                     <h2 className="max-w-4xl text-3xl font-light text-white md:text-4xl lg:text-5xl">
-                        Research revealed what users actually need—
+                        Research revealed what users actually need
                         <span className="text-neutral-500"> not more products, but better guidance.</span>
                     </h2>
                 </div>

@@ -10,7 +10,6 @@ import {
     UserJourney,
     Solution,
     ScreenShowcase,
-    Reflection,
     NextProject,
 } from "./components";
 
@@ -22,11 +21,10 @@ export default function DermaCareCaseStudyPage() {
             <TheHook />
             <MyRole />
             <TheProblem />
+            <Solution />
             <Insights />
             <UserJourney />
-            <Solution />
             <ScreenShowcase />
-            <Reflection />
             <NextProject />
         </div>
     );

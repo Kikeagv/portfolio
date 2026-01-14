@@ -18,6 +18,7 @@ export const projects: Project[] = [
       { value: "Self-serve", label: "No &ldquo;executive&rdquo;" },
     ],
     featured: true,
+    image: "/projects/one.png",
   },
   {
     id: "ruta-sv",
@@ -36,13 +37,14 @@ export const projects: Project[] = [
       { value: "4.6★", label: "App rating" },
     ],
     featured: true,
+    image: "/projects/ruta-sv.png",
   },
   {
     id: "dermacare",
     number: "02",
     title: "Dermacare",
     subtitle: "Skincare that starts with understanding",
-    description: "A skin-specialized pharmacy experience built around personalized assessment and dermatological expertise.",
+    description: "A skin specialized pharmacy experience built around personalized assessment and dermatological expertise.",
     category: "Product Design • Mobile • E-commerce",
     period: "2024",
     color: "emerald",
@@ -51,9 +53,10 @@ export const projects: Project[] = [
     stats: [
       { value: "87%", label: "Completion" },
       { value: "3.2x", label: "Engagement" },
-      { value: "94%", label: "Trust" },
+      { value: " trust", label: "94%" },
     ],
     featured: true,
+    image: "/projects/dermacare.png",
   },
   {
     id: "mobile-banking",
@@ -72,6 +75,7 @@ export const projects: Project[] = [
       { value: "45%", label: "More engagement" },
     ],
     featured: false,
+    image: "/projects/mobile-banking.png",
   },
   {
     id: "investment-dashboard",
@@ -90,5 +94,6 @@ export const projects: Project[] = [
       { value: "12", label: "Data widgets" },
     ],
     featured: false,
+    image: "/projects/investment-dashboard.png",
   },
 ];

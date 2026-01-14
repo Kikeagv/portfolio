@@ -7,5 +7,4 @@ export { Insights } from "./Insights";
 export { UserJourney } from "./UserJourney";
 export { Solution } from "./Solution";
 export { ScreenShowcase } from "./ScreenShowcase";
-export { Reflection } from "./Reflection";
 export { NextProject } from "./NextProject";

@@ -42,7 +42,6 @@ export const personas: Persona[] = [
     subtitle: "Daily Commuter, 34",
     description:
       "Takes multiple buses to work. Values speed and reliability. Frustrated by payment friction and transfer uncertainty.",
-    primaryNeed: "Quick route planning with accurate transfer times",
     color: "#0047AB",
   },
   {
@@ -51,7 +50,6 @@ export const personas: Persona[] = [
     subtitle: "Occasional Traveler, 67",
     description:
       "Uses transit for medical appointments. Limited smartphone experience. Needs simple, forgiving interface with large touch targets.",
-    primaryNeed: "Simple mode with step-by-step guidance",
     color: "#00A86B",
   },
   {
@@ -60,14 +58,13 @@ export const personas: Persona[] = [
     subtitle: "Accessibility Advocate, 28",
     description:
       "Screen reader user. Tech-savvy but excluded by poorly designed apps. Needs full VoiceOver support and logical navigation order.",
-    primaryNeed: "Complete screen reader accessibility",
     color: "#FF6B35",
   },
 ];
 
 export const principles: Principle[] = [
   {
-    label: "Accessible-First",
+    label: "Accessibility",
     desc: "Design for constraints, benefit everyone",
   },
   {
@@ -75,14 +72,11 @@ export const principles: Principle[] = [
     desc: "Landmarks, language, mental models",
   },
   {
-    label: "Connectivity-Conscious",
-    desc: "Offline by default, online when available",
-  },
-  {
     label: "Progressive Complexity",
     desc: "Simple start, depth when needed",
   },
 ];
+
 
 export const accessibilityMetrics: AccessibilityMetric[] = [
   { metric: "4.5:1", label: "Minimum contrast ratio (WCAG AA)" },

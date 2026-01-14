@@ -10,7 +10,6 @@ export interface Persona {
   name: string;
   subtitle: string;
   description: string;
-  primaryNeed: string;
   color: string;
 }
 

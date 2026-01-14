@@ -10,12 +10,10 @@ export function MyRole() {
               My Role
             </p>
             <h2 className="text-3xl font-light text-neutral-900 md:text-4xl">
-              Solo Product Designer
+              Product Designer
             </h2>
             <p className="mt-6 text-lg text-neutral-600">
-              End-to-end ownership from research through high-fidelity UI. This
-              project required ruthless prioritization—every decision had to
-              earn its place.
+              End-to-end ownership from research through high-fidelity UI.
             </p>
           </div>
 
@@ -23,7 +21,7 @@ export function MyRole() {
             <div className="border-l-2 border-[#0047AB] pl-6">
               <p className="font-medium text-neutral-900">Research</p>
               <p className="mt-1 text-neutral-600">
-                12 user interviews, contextual observation, 87 survey responses
+                4 user interviews, contextual observation, 28 survey responses
               </p>
             </div>
             <div className="border-l-2 border-neutral-200 pl-6">

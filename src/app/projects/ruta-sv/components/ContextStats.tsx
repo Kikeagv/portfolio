@@ -8,7 +8,7 @@ export function ContextStats() {
       label: "transit apps for El Salvador",
       value: "0",
       gradient: "from-[#0047AB] to-[#003380]",
-      textColor: "blue-200",
+      textColor: "white",
     },
     {
       label: "only payment accepted",

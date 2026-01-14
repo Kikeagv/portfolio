@@ -15,7 +15,7 @@ export function ImpactStatement() {
         >
           El Salvador had no transit apps.
           <span className="text-neutral-400">
-            {" "}I designed Ruta SV—an accessible, offline-first solution that puts riders first.
+            {" "}I designed Ruta SV, an accessible solution that puts riders first.
           </span>
         </motion.p>
       </div>

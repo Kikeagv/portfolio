@@ -13,7 +13,7 @@ export interface Project {
   category: string;
   color: "emerald" | "blue" | "violet";
   href: string;
-  stats: Record<string, string>;
+  image?: string;
 }
 
 export interface Job {

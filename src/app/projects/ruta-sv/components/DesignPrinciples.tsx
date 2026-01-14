@@ -11,20 +11,19 @@ export function DesignPrinciples() {
             Design Principles
           </p>
           <h2 className="text-3xl font-light text-neutral-900 md:text-4xl">
-            Four principles guided every decision
+            Three principles guided every decision
           </h2>
         </div>
 
         <div className="overflow-hidden rounded-2xl bg-neutral-950 p-1">
-          <div className="grid md:grid-cols-4">
+          <div className="grid md:grid-cols-3">
             {principles.map((principle, index) => (
               <div
                 key={principle.label}
-                className={`p-8 ${
-                  index !== 3
+                className={`p-8 ${index !== 2
                     ? "border-b border-neutral-800 md:border-r md:border-b-0"
                     : ""
-                }`}
+                  }`}
               >
                 <p className="text-lg font-medium text-white">
                   {principle.label}

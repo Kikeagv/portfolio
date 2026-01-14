@@ -20,7 +20,7 @@ export interface Principle {
     desc: string;
 }
 
-import type { StaticImageData } from "next/image";
+
 
 export interface Screen {
     name: string;

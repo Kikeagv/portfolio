@@ -7,13 +7,12 @@ const screens = [
     { name: "07-results.png", label: "Results Summary" },
     { name: "08-shop-home.png", label: "Shop Home" },
     { name: "01-welcome.png", label: "Welcome" },
-    { name: "02-value-carousel.png", label: "Value Carousel" },
+    { name: "02-category-search.png", label: "Category Search" },
     { name: "03-assessment-intro.png", label: "Assessment Intro" },
     { name: "04-skin-type.png", label: "Skin Type" },
     { name: "05-concerns.png", label: "Primary Concerns" },
     { name: "06-lifestyle.png", label: "Lifestyle Factors" },
     { name: "09-product-detail.png", label: "Product Detail" },
-    { name: "10-cart.png", label: "Cart + Routine" },
 ];
 
 export function ScreenShowcase() {

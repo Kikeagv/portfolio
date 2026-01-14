@@ -51,25 +51,7 @@ export const insights: Insight[] = [
         decision:
             "Progressive disclosure with contextual education. Each question teaches something while gathering data.",
         accent: "#2D5A6B",
-    },
-    {
-        number: "03",
-        title: "Personalization must be transparent",
-        insight:
-            "\"Why this product for me?\" is the question that converts. Black-box recommendations erode trust.",
-        decision:
-            "Explicit match reasoning on every product. Show the connection between user profile and recommendation.",
-        accent: "#D4B896",
-    },
-    {
-        number: "04",
-        title: "Education reduces returns",
-        insight:
-            "Users who understand ingredients and usage instructions have significantly higher satisfaction and lower return rates.",
-        decision:
-            "Ingredient breakdowns, usage guidance, and compatibility warnings integrated into product pages.",
-        accent: "#1A3A4A",
-    },
+    }
 ];
 
 export const principles: Principle[] = [
@@ -81,7 +63,7 @@ export const principles: Principle[] = [
 
 export const screens: Screen[] = [
     { name: "01-welcome.png", label: "Welcome", desc: "Value proposition + trust signals" },
-    { name: "02-value-carousel.png", label: "Value carousel", desc: "Benefits preview before commitment" },
+    { name: "02-category-search.png", label: "Category search", desc: "Intuitive navigation by concern or product type" },
     { name: "03-assessment-intro.png", label: "Assessment intro", desc: "Set expectations, time estimate" },
     { name: "04-skin-type.png", label: "Skin type", desc: "Educational selection with guidance" },
     { name: "05-concerns.png", label: "Primary concerns", desc: "Multi-select with priority ranking" },
@@ -89,12 +71,11 @@ export const screens: Screen[] = [
     { name: "07-results.png", label: "Results summary", desc: "Personalized skin profile" },
     { name: "08-shop-home.png", label: "Shop home", desc: "Curated matches + exploration" },
     { name: "09-product-detail.png", label: "Product detail", desc: "Match reasoning + ingredients" },
-    { name: "10-cart.png", label: "Cart + routine", desc: "Complete routine suggestions" },
 ];
 
 export const journeySteps: JourneyStep[] = [
-    { phase: "Discover", screens: "Welcome → Value carousel", color: "#4A7C59" },
+    { phase: "Discover", screens: "Welcome → Category search", color: "#4A7C59" },
     { phase: "Understand", screens: "Assessment (6 screens)", color: "#2D5A6B" },
     { phase: "Match", screens: "Results → Recommendations", color: "#D4B896" },
-    { phase: "Shop", screens: "Browse → Purchase", color: "#1A3A4A" },
+    { phase: "Shop", screens: "Browse", color: "#1A3A4A" },
 ];

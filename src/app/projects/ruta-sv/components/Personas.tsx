@@ -12,7 +12,7 @@ export function Personas() {
             Who I Designed For
           </p>
           <h2 className="text-3xl font-light text-neutral-900 md:text-4xl">
-            Three personas, three different needs
+            Three personas, three perspectives
           </h2>
         </div>
 
@@ -42,10 +42,7 @@ export function Personas() {
                 {persona.subtitle}
               </p>
               <p className="mt-4 text-neutral-600">{persona.description}</p>
-              <p className="mt-4 text-sm text-neutral-500">
-                <span className="font-medium">Primary need:</span>{" "}
-                {persona.primaryNeed}
-              </p>
+
             </motion.div>
           ))}
         </div>

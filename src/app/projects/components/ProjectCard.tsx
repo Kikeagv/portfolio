@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import type { Project } from "../types";
 
 interface ProjectCardProps {
@@ -51,16 +52,7 @@ export function ProjectCard({ project, index, isFeatured = false }: ProjectCardP
                   </p>
                 </div>
 
-                <div className="mt-12 flex gap-8 border-t border-neutral-800 pt-8">
-                  {project.stats.map((stat) => (
-                    <div key={stat.label}>
-                      <p className="text-2xl font-light text-white">{stat.value}</p>
-                      <p className="mt-1 text-xs uppercase tracking-wider text-neutral-600">
-                        {stat.label}
-                      </p>
-                    </div>
-                  ))}
-                </div>
+
 
                 <motion.div
                   className="mt-8 flex items-center gap-2 text-white"
@@ -73,29 +65,41 @@ export function ProjectCard({ project, index, isFeatured = false }: ProjectCardP
 
               <div className={`relative min-h-100 bg-linear-to-br ${project.gradient} lg:min-h-150`}>
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.2),transparent_60%)]" />
-                <div className="absolute inset-0 flex items-center justify-center p-12">
+                <div className="absolute inset-0 flex items-center justify-center p-6 md:p-12">
                   <motion.div
-                    className="relative w-full max-w-70"
+                    className="relative w-full aspect-video"
                     animate={{
                       y: hoveredProject === project.id ? -8 : 0,
-                      scale: hoveredProject === project.id ? 1.02 : 1,
+                      scale: hoveredProject === project.id ? 1.05 : 1,
                     }}
                     transition={{ duration: 0.4 }}
                   >
-                    <div className="aspect-9/19 overflow-hidden rounded-[2.5rem] bg-neutral-900 p-2 shadow-2xl">
-                      <div className="h-full w-full overflow-hidden rounded-4xl bg-neutral-800">
-                        <div className="mx-auto mt-2 h-6 w-24 rounded-full bg-neutral-900" />
-                        <div className="space-y-3 p-4">
-                          <div className="h-12 rounded-xl bg-white/10" />
-                          <div className="h-32 rounded-xl bg-white/10" />
-                          <div className="h-20 rounded-xl bg-white/10" />
-                          <div className="grid grid-cols-2 gap-3">
-                            <div className="h-16 rounded-xl bg-white/10" />
-                            <div className="h-16 rounded-xl bg-white/10" />
+                    {project.image ? (
+                      <div className="relative h-full w-full overflow-hidden rounded-2xl">
+                        <Image
+                          src={project.image}
+                          alt={project.title}
+                          fill
+                          className="object-contain"
+                          priority={index < 2}
+                        />
+                      </div>
+                    ) : (
+                      <div className="aspect-9/19 overflow-hidden rounded-[2.5rem] bg-neutral-900 p-2 shadow-2xl">
+                        <div className="h-full w-full overflow-hidden rounded-4xl bg-neutral-800">
+                          <div className="mx-auto mt-2 h-6 w-24 rounded-full bg-neutral-900" />
+                          <div className="space-y-3 p-4">
+                            <div className="h-12 rounded-xl bg-white/10" />
+                            <div className="h-32 rounded-xl bg-white/10" />
+                            <div className="h-20 rounded-xl bg-white/10" />
+                            <div className="grid grid-cols-2 gap-3">
+                              <div className="h-16 rounded-xl bg-white/10" />
+                              <div className="h-16 rounded-xl bg-white/10" />
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
+                    )}
                   </motion.div>
                 </div>
               </div>
@@ -120,16 +124,30 @@ export function ProjectCard({ project, index, isFeatured = false }: ProjectCardP
         <div className="overflow-hidden rounded-2xl bg-neutral-900 transition-colors hover:bg-neutral-800">
           <div className={`relative h-64 bg-linear-to-br ${project.gradient}`}>
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.15),transparent_60%)]" />
-            <div className="absolute inset-0 flex items-center justify-center p-8">
+            <div className="absolute inset-0 p-6">
               <motion.div
                 animate={{
                   y: hoveredProject === project.id ? -4 : 0,
+                  scale: hoveredProject === project.id ? 1.05 : 1,
                 }}
-                className="grid grid-cols-2 gap-3 w-full max-w-50"
+                className="relative h-full w-full"
               >
-                <div className="h-20 rounded-xl bg-white/20 backdrop-blur-sm" />
-                <div className="h-20 rounded-xl bg-white/20 backdrop-blur-sm" />
-                <div className="col-span-2 h-16 rounded-xl bg-white/20 backdrop-blur-sm" />
+                {project.image ? (
+                  <div className="relative h-full w-full overflow-hidden rounded-xl">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-2 gap-3 w-full h-full max-w-50 mx-auto items-center">
+                    <div className="h-20 rounded-xl bg-white/20 backdrop-blur-sm" />
+                    <div className="h-20 rounded-xl bg-white/20 backdrop-blur-sm" />
+                    <div className="col-span-2 h-16 rounded-xl bg-white/20 backdrop-blur-sm" />
+                  </div>
+                )}
               </motion.div>
             </div>
           </div>
@@ -151,14 +169,7 @@ export function ProjectCard({ project, index, isFeatured = false }: ProjectCardP
               {project.category}
             </p>
 
-            <div className="mt-6 flex gap-6 border-t border-neutral-800 pt-6">
-              {project.stats.slice(0, 2).map((stat) => (
-                <div key={stat.label}>
-                  <p className="text-lg font-light text-white">{stat.value}</p>
-                  <p className="text-xs text-neutral-600">{stat.label}</p>
-                </div>
-              ))}
-            </div>
+
           </div>
         </div>
       </Link>

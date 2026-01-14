@@ -60,7 +60,7 @@ export function Hero() {
           transition={{ delay: 0.6 }}
           className="mx-auto max-w-xl text-lg text-neutral-400"
         >
-          How accessibility-first thinking shaped a public transportation app
+          How accessibility thinking shaped a public transportation app
           for a country where none existed.
         </motion.p>
       </div>

@@ -15,5 +15,6 @@ export interface Project {
   gradient: string;
   href: string;
   stats: Stat[];
+  image?: string;
   featured: boolean;
 }

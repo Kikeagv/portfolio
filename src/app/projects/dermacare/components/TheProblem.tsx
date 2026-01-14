@@ -68,10 +68,10 @@ export function TheProblem() {
                         <h3 className="text-xl font-medium text-neutral-900">Trust deficit</h3>
                         <p className="mt-3 text-neutral-600">
                             Without professional context, users can&apos;t distinguish marketing from efficacy.
-                            Trial-and-error leads to wasted money and skin reactions.
+                            Trial and error leads to wasted money and skin reactions.
                         </p>
                         <p className="mt-4 text-sm text-neutral-400">
-                            &ldquo;I&apos;ve bought so many products that did nothing—or made things worse.&rdquo;
+                            &ldquo;I&apos;ve bought so many products that did nothing or made things worse.&rdquo;
                         </p>
                     </motion.div>
                 </div>

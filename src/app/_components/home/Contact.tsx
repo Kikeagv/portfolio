@@ -19,12 +19,12 @@ export function Contact() {
           </h2>
 
           <motion.a
-            href="mailto:enrique@example.com"
+            href="mailto:contact@enriqueagv.com"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             className="mt-12 inline-flex items-center gap-3 text-2xl text-white transition-colors hover:text-neutral-300"
           >
-            enrique@example.com
+            contact@enriqueagv.com
             <ArrowUpRight className="h-6 w-6" />
           </motion.a>
         </motion.div>
