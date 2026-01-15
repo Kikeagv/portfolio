@@ -84,7 +84,7 @@ export function Navigation({ version, onVersionChange }: NavigationProps) {
 
           {/* Resume button */}
           <motion.a
-            href="/Resume_Enrique_Garcia_Product_Designer.pdf"
+            href="/Resume_Enrique_Garcia.pdf"
             download
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}

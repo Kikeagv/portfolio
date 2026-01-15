@@ -32,7 +32,7 @@ export function CTASection() {
             </motion.a>
 
             <motion.a
-              href="/Resume_Enrique_Garcia_Product_Designer.pdf"
+              href="/Resume_Enrique_Garcia.pdf"
               download
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}

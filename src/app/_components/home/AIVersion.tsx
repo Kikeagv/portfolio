@@ -35,7 +35,7 @@ Product Designer with 5+ years of experience designing end-to-end mobile experie
 ## Professional Experience
 
 ### UX/UI Analyst
-**Banco Atlántida** | San Salvador, El Salvador | September 2023 - Present
+**Banco Atlántida** | San Salvador, El Salvador | September 2023 - Present | Full-time
 
 Lead end-to-end UX/UI for core retail banking products, partnering with Engineering, PM, and Business to deliver measurable outcomes across mobile platforms.
 
@@ -46,7 +46,7 @@ Lead end-to-end UX/UI for core retail banking products, partnering with Engineer
 - Optimized mobile UX for real-world conditions including variable connectivity, performance constraints, error states, loading states, and edge cases
 
 ### UX/UI Designer
-**BlueStar** | March 2020 - April 2023 | Full-time
+**BlueStar** | San Salvador, El Salvador | March 2020 - April 2023 | Full-time
 
 Delivered complete product design lifecycle from discovery through implementation across multiple digital products.
 
@@ -56,7 +56,7 @@ Delivered complete product design lifecycle from discovery through implementatio
 - Partnered closely with engineering teams to resolve edge cases, ensure smooth implementation, and maintain design fidelity through QA cycles
 
 ### Web Designer
-**Ministry of Economy, El Salvador** | February 2022 - July 2022 | Internship
+**Ministry of Economy | San Salvador, El Salvador | February 2022 - July 2022 | Internship
 
 - Designed and developed internal pages for a major governmental website serving citizens
 - Collaborated with cross-functional teams of designers, developers, and government stakeholders to deliver high-quality public-facing web experiences
