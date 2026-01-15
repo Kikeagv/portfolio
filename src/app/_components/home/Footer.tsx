@@ -9,28 +9,22 @@ export function Footer() {
 
           <div className="flex items-center gap-6">
             <a
-              href="#"
+              href="https://www.linkedin.com/in/enrique-agv/"
               className="text-sm text-neutral-600 transition-colors hover:text-white"
             >
               LinkedIn
             </a>
             <a
-              href="#"
+              href="https://x.com/enrique_garciav"
               className="text-sm text-neutral-600 transition-colors hover:text-white"
             >
               Twitter
             </a>
             <a
-              href="#"
+              href="https://github.com/Kikeagv"
               className="text-sm text-neutral-600 transition-colors hover:text-white"
             >
               GitHub
-            </a>
-            <a
-              href="#"
-              className="text-sm text-neutral-600 transition-colors hover:text-white"
-            >
-              Read.cv
             </a>
           </div>
         </div>
