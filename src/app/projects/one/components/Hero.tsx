@@ -59,8 +59,8 @@ export default function Hero() {
           transition={{ delay: 0.6 }}
           className="mx-auto max-w-2xl text-lg text-neutral-400"
         >
-          How we shipped a mobile-first credit card onboarding experience centered on autonomy,
-          transparency, and self-service—turning &ldquo;fear of credit&rdquo; into confident activation.
+          How we shipped a digital first credit card onboarding experience centered on autonomy,
+          transparency, and self-service turning &ldquo;fear of credit&rdquo; into confident activation.
         </motion.p>
       </div>
 

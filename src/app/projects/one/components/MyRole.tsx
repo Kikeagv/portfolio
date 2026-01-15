@@ -20,10 +20,9 @@ export default function MyRole() {
             <div className="rounded-2xl border border-neutral-200 p-6">
               <p className="text-sm font-medium text-neutral-900">Responsibilities</p>
               <div className="mt-3 grid gap-3 text-sm text-neutral-600">
-                <p>• Funnel strategy + IA + user flows</p>
+                <p>• Funnel strategy + user flows</p>
                 <p>• KYC UX (error recovery, retries, clarity)</p>
                 <p>• Offer/terms comprehension design</p>
-                <p>• Activation + controls (freeze, limits, pin)</p>
                 <p>• Dev handoff + build QA</p>
               </div>
             </div>

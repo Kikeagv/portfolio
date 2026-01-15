@@ -29,7 +29,7 @@ export const projects: Project[] = [
     category: "Product Design • Mobile • Offline-first",
     period: "2024",
     color: "blue",
-    gradient: "from-blue-600 to-cyan-500",
+    gradient: "from-neutral-100 to-white",
     href: "/projects/ruta-sv",
     stats: [
       { value: "45K+", label: "Active users" },

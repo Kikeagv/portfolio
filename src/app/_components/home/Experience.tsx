@@ -5,26 +5,28 @@ import type { Job } from "./types";
 
 const jobs: Job[] = [
   {
-    period: "2022 — Now",
-    role: "Senior Product Designer",
-    company: "FinTech Solutions",
-    description: "Leading design for mobile banking products serving 2M+ users.",
-    highlight: "2M+ users",
-  },
-  {
-    period: "2020 — 2022",
-    role: "UX Designer",
-    company: "Banco Digital",
+    period: "2023 — Present",
+    role: "UX/UI Analyst",
+    company: "Banco Atlántida",
     description:
-      "Designed and shipped key features for digital banking platform.",
-    highlight: "30% fewer tickets",
+      "Lead end-to-end UX/UI for core retail banking products. Built cross-brand design systems, led mobile app design from concept to launch, and drove implementation quality through rigorous design reviews.",
+    highlight: "Design Systems",
   },
   {
-    period: "2019 — 2020",
-    role: "Product Designer",
-    company: "StartUp Finance",
-    description: "End-to-end design for fintech startup from 0 to funding.",
-    highlight: "$2M funding",
+    period: "2020 — 2023",
+    role: "UX/UI Designer",
+    company: "BlueStar",
+    description:
+      "Delivered complete product design lifecycle across multiple digital products. Shipped features end-to-end with user research, prototyping, and developer handoff.",
+    highlight: "Full Lifecycle",
+  },
+  {
+    period: "2022",
+    role: "Web Designer",
+    company: "Ministry of Economy",
+    description:
+      "Designed internal pages for a major governmental website. Collaborated with cross-functional teams to deliver public-facing web experiences.",
+    highlight: "Internship",
   },
 ];
 

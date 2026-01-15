@@ -16,7 +16,7 @@ export function CTASection() {
             Want to see more?
           </h2>
           <p className="mx-auto mt-6 max-w-lg text-lg text-neutral-600">
-            These are just the highlights. I&rsquo;ve worked on 50+ projects{" "}
+            These are just the highlights. I&rsquo;ve worked on many projects{" "}
             across healthcare, finance, and public services.
           </p>
 
@@ -32,7 +32,7 @@ export function CTASection() {
             </motion.a>
 
             <motion.a
-              href="/resume.pdf"
+              href="/Resume_Enrique_Garcia_Product_Designer.pdf"
               download
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}

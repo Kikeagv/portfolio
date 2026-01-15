@@ -17,6 +17,7 @@ const projects: Project[] = [
     category: "UX/UI Design • Product Design",
     color: "violet",
     href: "/projects/one",
+    image: "/home/One-cover.png",
   },
   {
     id: "ruta-sv",

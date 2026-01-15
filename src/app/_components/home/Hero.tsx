@@ -49,11 +49,12 @@ export function Hero() {
         opacity: hasScrolled && isVisible ? heroOpacity : 1,
         y: hasScrolled && isVisible ? heroY : 0,
       }}
-      className="relative flex min-h-screen flex-col justify-center px-6 pt-16"
+      className="relative flex min-h-[70vh] flex-col justify-center px-6 py-12 md:min-h-[calc(100vh-72px)] md:py-0"
     >
       <div className="mx-auto w-full max-w-7xl">
-        <div className="grid gap-12 lg:grid-cols-12">
-          <div className="lg:col-span-8">
+        <div className="grid gap-8 lg:grid-cols-12 lg:gap-12">
+          {/* Main content */}
+          <div className="text-center lg:col-span-8 lg:text-left">
             <motion.div
               initial={{ opacity: 0, y: 60 }}
               animate={
@@ -61,25 +62,24 @@ export function Hero() {
               }
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             >
-              <p className="mb-6 text-neutral-500">Product Designer</p>
+              <p className="mb-4 text-sm text-neutral-500 md:mb-6 md:text-base">Product Designer</p>
 
-              <h1 className="text-5xl leading-[1.1] font-light tracking-tight text-neutral-900 md:text-7xl lg:text-8xl">
+              <h1 className="text-4xl leading-[1.15] font-light tracking-tight text-neutral-900 md:text-5xl lg:text-7xl xl:text-8xl">
                 I design products
                 <br />
                 <span className="text-neutral-400">that put people first.</span>
               </h1>
 
-              <p className="mt-8 max-w-lg text-xl text-neutral-500">
-                Specializing in complex systems—healthcare, transit,
-                finance—where good design isn&apos;t a luxury, it&apos;s a necessity.
+              <p className="mx-auto mt-6 max-w-md text-base text-neutral-500 md:mx-0 md:mt-8 md:max-w-lg md:text-xl">
+                Specializing in complex systems where good design it&apos;s granted.
               </p>
 
-              <div className="mt-12 flex flex-wrap items-center gap-4">
+              <div className="mt-8 flex flex-wrap items-center justify-center gap-4 md:mt-12 md:justify-start">
                 <Link href="/projects/">
                   <motion.button
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className="flex items-center gap-2 rounded-full bg-neutral-900 px-6 py-3 text-sm text-white"
+                    className="flex items-center gap-2 rounded-full bg-neutral-900 px-5 py-2.5 text-sm text-white md:px-6 md:py-3"
                   >
                     View my work
                     <ArrowRight className="h-4 w-4" />
@@ -95,10 +95,11 @@ export function Hero() {
             </motion.div>
           </div>
 
+          {/* Widgets - below content on mobile, side on desktop */}
           <motion.div
             animate={isVisible ? { opacity: 1 } : { opacity: 0 }}
             transition={{ delay: 0.5 }}
-            className="flex flex-col items-start gap-4 lg:col-span-4 lg:items-end lg:justify-end"
+            className="flex flex-col items-center gap-4 lg:col-span-4 lg:items-end lg:justify-end"
           >
             <WeatherWidget />
             <MusicWidget />
@@ -106,10 +107,11 @@ export function Hero() {
         </div>
       </div>
 
+      {/* Scroll indicator - hidden on mobile */}
       <motion.div
         animate={isVisible ? { opacity: 1 } : { opacity: 0 }}
         transition={{ delay: 1.5 }}
-        className="absolute bottom-12 left-1/2 -translate-x-1/2"
+        className="absolute bottom-12 left-1/2 hidden -translate-x-1/2 md:block"
       >
         <motion.div
           animate={{ y: [0, 8, 0] }}

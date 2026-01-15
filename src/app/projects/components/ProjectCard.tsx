@@ -65,9 +65,9 @@ export function ProjectCard({ project, index, isFeatured = false }: ProjectCardP
 
               <div className={`relative min-h-100 bg-linear-to-br ${project.gradient} lg:min-h-150`}>
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.2),transparent_60%)]" />
-                <div className="absolute inset-0 flex items-center justify-center p-6 md:p-12">
+                <div className="absolute inset-0 flex items-center justify-center p-6 md:p-8">
                   <motion.div
-                    className="relative w-full aspect-video"
+                    className="relative h-full w-full"
                     animate={{
                       y: hoveredProject === project.id ? -8 : 0,
                       scale: hoveredProject === project.id ? 1.05 : 1,

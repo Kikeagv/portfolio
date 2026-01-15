@@ -16,7 +16,6 @@ export default function TheHook() {
           People don&apos;t avoid credit because they don&apos;t want it.
           <span className="text-neutral-400"> They avoid it because they don&apos;t trust it.</span>
           <br />
-          Hidden fees, unclear approvals, and bureaucracy make them feel powerless.
         </motion.p>
         <p className="mt-10 text-lg text-neutral-600">
           Our job was to replace anxiety with control—without sacrificing fraud prevention or compliance.

@@ -24,10 +24,6 @@ export default function DesignPrinciples() {
             ))}
           </div>
         </div>
-
-        <p className="mt-8 text-sm text-neutral-500">
-          &ldquo;Personalización inteligente&rdquo; was a north star: give users autonomy and tools—so they don&apos;t feel powerless.
-        </p>
       </div>
     </section>
   );

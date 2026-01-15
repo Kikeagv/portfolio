@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 function PhoneMock({
   name,
   label,
@@ -11,30 +13,27 @@ function PhoneMock({
   footer?: string;
   variant?: "light" | "dark";
 }) {
-  const frameBg = variant === "dark" ? "bg-white" : "bg-neutral-100";
-  const innerBg = variant === "dark" ? "bg-neutral-100" : "bg-white";
-  const text = variant === "dark" ? "text-neutral-400" : "text-neutral-400";
-  const chip = variant === "dark" ? "bg-neutral-900/80 text-white" : "bg-white/80 text-neutral-900";
+  const frameBg = variant === "dark" ? "bg-neutral-900" : "bg-neutral-100";
+  const chip =
+    variant === "dark"
+      ? "bg-neutral-900/80 text-white"
+      : "bg-white/80 text-neutral-900";
 
   return (
-    <div className="w-full max-w-[320px]">
-      <div className="mb-3 flex items-center justify-between">
-        <p className="text-sm font-medium text-neutral-900">{label}</p>
-        <span className={`rounded-full px-3 py-1 text-xs ${chip}`}>{name}</span>
+    <div className="w-full">
+      <div
+        className={`relative aspect-[390/844] overflow-hidden rounded-[3rem] ${frameBg} border-[8px] ${variant === 'dark' ? 'border-neutral-800' : 'border-neutral-200'} shadow-2xl transition-transform duration-500 hover:scale-[1.02]`}
+      >
+        <Image
+          src={`/projects/one/${name}`}
+          alt={label}
+          fill
+          className="object-cover"
+        />
       </div>
-
-      <div className={`aspect-[390/844] overflow-hidden rounded-[2.6rem] ${frameBg} shadow-2xl`}>
-        <div className="h-full w-full p-3">
-          <div className={`h-full w-full overflow-hidden rounded-[2.2rem] ${innerBg}`}>
-            <div className="flex h-full w-full items-center justify-center">
-              <div className="text-center">
-                <p className={`${text}`}>{name}</p>
-                {footer ? <p className="mt-2 text-xs text-neutral-500">{footer}</p> : null}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {footer && (
+        <p className="mt-4 text-center text-xs tracking-wider text-neutral-500 uppercase">{footer}</p>
+      )}
     </div>
   );
 }

@@ -1,18 +1,24 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const screens = [
-  { name: "01-eligibility.png", label: "Eligibility", desc: "Requirements + time estimate before commitment" },
-  { name: "02-kyc-intro.png", label: "Identity intro", desc: "Explain why verification is needed" },
-  { name: "03-id-capture.png", label: "Document capture", desc: "Guided capture + real-time checks" },
-  { name: "04-selfie-liveness.png", label: "Selfie / liveness", desc: "Fast, forgiving flow with retries" },
-  { name: "05-personal-details.png", label: "Personal details", desc: "Only what&apos;s necessary; clear progress" },
-  { name: "06-income-details.png", label: "Income & employment", desc: "Simple, structured inputs; no overwhelm" },
-  { name: "07-offer-summary.png", label: "Offer summary", desc: "Limits, fees, APR—summarized first" },
-  { name: "08-terms-consent.png", label: "Terms & consent", desc: "Plain-language highlights + full docs" },
-  { name: "09-decision-status.png", label: "Decision status", desc: "Approved / pending / alternative actions" },
-  { name: "10-activation-controls.png", label: "Activation & controls", desc: "Set PIN, freeze card, spending controls" },
+  { name: "X - 1.png", label: "Start Intro", desc: "Eligibility check & initial steps" },
+  { name: "X - 2.png", label: "Identity validation", desc: "Selfie capture for verification" },
+  { name: "X - 3.png", label: "Phone verification", desc: "OTP 6-digit code entry" },
+  { name: "X - 4.png", label: "Residence address", desc: "Map view + location details" },
+  { name: "X - 5.png", label: "Email entry", desc: "Contact information setup" },
+  { name: "X - 6.png", label: "Personal details", desc: "Profile & academic background" },
+  { name: "X - 7.png", label: "Employment", desc: "Workplace & contract details" },
+  { name: "X - 8.png", label: "References", desc: "Empty state for adding contacts" },
+  { name: "X - 9.png", label: "Add family ref", desc: "Bottom sheet for reference entry" },
+  { name: "X - 10.png", label: "References list", desc: "Filled personal/family refs" },
+  { name: "X - 11.png", label: "Offer approved", desc: "Exclusive credit limit offer" },
+  { name: "X - 12.png", label: "Offer unavailable", desc: "Waitlist state for ineligible" },
+  { name: "X - 13.png", label: "Choose rewards", desc: "Benefit selection (permanent)" },
+  { name: "X - 14.png", label: "Benefit details", desc: "Deeper look at selected perks" },
+  { name: "X - 15.png", label: "Personalization", desc: "Card color & name customization" },
 ];
 
 export default function ScreenGallery() {
@@ -21,9 +27,9 @@ export default function ScreenGallery() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-16 text-center">
           <p className="mb-4 text-sm tracking-wider text-neutral-500 uppercase">Screen Gallery</p>
-          <h3 className="text-3xl font-light text-white md:text-4xl">10 key screens</h3>
+          <h3 className="text-3xl font-light text-white md:text-4xl">Complete Flow</h3>
           <p className="mx-auto mt-4 max-w-2xl text-neutral-400">
-            Replace each placeholder with a redacted screenshot or polished mock. Keep filenames the same.
+            A deep dive into key screens that make up the digital onboarding experience.
           </p>
         </div>
 
@@ -37,13 +43,16 @@ export default function ScreenGallery() {
               transition={{ delay: index * 0.03 }}
               className="group"
             >
-              <div className="aspect-[9/16] overflow-hidden rounded-2xl bg-neutral-900 transition-transform group-hover:scale-[1.02]">
-                <div className="flex h-full w-full flex-col items-center justify-center gap-2 bg-neutral-800 p-3">
-                  <p className="text-center text-xs text-neutral-300">{s.name}</p>
-                  <p className="text-center text-[11px] text-neutral-500">{s.label}</p>
-                </div>
+              <div className="aspect-[390/844] overflow-hidden rounded-2xl bg-neutral-900 transition-transform group-hover:scale-[1.02] border border-white/5 relative">
+                <Image
+                  src={`/projects/one/${s.name}`}
+                  alt={s.label}
+                  fill
+                  className="object-cover object-top"
+                />
               </div>
-              <p className="mt-3 text-center text-xs text-neutral-500">{s.desc}</p>
+              <p className="mt-3 text-center text-[11px] font-medium text-white">{s.label}</p>
+              <p className="text-center text-[10px] text-neutral-500">{s.desc}</p>
             </motion.div>
           ))}
         </div>
