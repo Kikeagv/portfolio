@@ -14,10 +14,7 @@ function PhoneMock({
   variant?: "light" | "dark";
 }) {
   const frameBg = variant === "dark" ? "bg-neutral-900" : "bg-neutral-100";
-  const chip =
-    variant === "dark"
-      ? "bg-neutral-900/80 text-white"
-      : "bg-white/80 text-neutral-900";
+
 
   return (
     <div className="w-full">

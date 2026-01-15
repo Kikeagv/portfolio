@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import type { Stat } from "./types";
+
 
 const skills = [
   "User Research",
@@ -32,7 +32,7 @@ export function About() {
 
           <div className="mt-8 space-y-6 text-lg text-neutral-600">
             <p>
-              Years of shipping mobile products taught me that great design isn't about pixel-perfect screens. It's about making hard things feel effortless.
+              Years of shipping mobile products taught me that great design isn&apos;t about pixel-perfect screens. It&apos;s about making hard things feel effortless.
             </p>
             <p>I think AI can accelerate the development cycle, AI is not going to replace me but is making me better and faster each day.</p>
           </div>
